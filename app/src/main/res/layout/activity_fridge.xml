@@ -3,7 +3,7 @@
 <ScrollView android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:background="#3d455b"
+    android:background="@color/colorPrimaryDark"
     android:layout_alignParentLeft="true">
 
 <HorizontalScrollView android:layout_height="wrap_content"
@@ -17,6 +17,7 @@
 <TableLayout android:layout_height="wrap_content"
     android:layout_width="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark"
    android:id="@+id/table_main"
     android:layout_centerHorizontal="true">
 </TableLayout>
