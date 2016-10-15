@@ -25,7 +25,13 @@
         <activity android:name=".myRecipes" />
         <activity android:name=".Shopping" />
         <activity android:name=".Receipt" />
+        <activity
+            android:name=".OrientationCaptureActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
 
+        </activity>
     </application>
 
 </manifest>
