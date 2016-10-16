@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LandingPageActivity">
+        <activity android:name=".LandingPageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,11 +21,22 @@
         <activity
             android:name=".Home"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Fridge" />
-        <activity android:name=".myRecipes" />
-        <activity android:name=".Shopping" />
-        <activity android:name=".Receipt" />
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".Fridge"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".myRecipes"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Shopping"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Receipt"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <activity
             android:name=".OrientationCaptureActivity"
             android:screenOrientation="portrait"

@@ -116,6 +116,9 @@ public class Home extends AppCompatActivity {
                     }
                     else {
                         Log.d(TAG, "ERROR: DB WRITE FAILURE FOR: " + receiptList.get(i));
+                        if (i == (receiptList.size()-1)){
+                            Toast.makeText(this, "ERROR: FAILED TO WRITE TO DB", Toast.LENGTH_LONG).show();
+                        }
                     }
                 }
             }

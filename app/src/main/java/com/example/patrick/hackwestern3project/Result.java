@@ -91,6 +91,9 @@ public class Result extends AppCompatActivity {
             });
             queue.add(stringRequest);
         }
+
+        // Get database from storage
+        myDb.getAllData();
     }
 }
 

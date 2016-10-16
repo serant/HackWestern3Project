@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -29,9 +28,9 @@ public class Shopping extends YouTubeBaseActivity
     private YouTubePlayerView youTubePlayerView;
     private YouTubePlayer.OnInitializedListener onInitializedListener;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping);
         youTubePlayerView = (YouTubePlayerView) findViewById(R.id.view);
@@ -89,9 +88,5 @@ public class Shopping extends YouTubeBaseActivity
 // Add the request to the RequestQueue.
         queue.add(stringRequest);
         }
-
-
-
-
     }
 
