@@ -25,16 +25,16 @@ public class Home extends AppCompatActivity {
 
         myDb = new DatabaseHelper(this);
 
-        Button fridgeButton = (Button) findViewById(R.id.fridgeButton);
-        fridgeButton.setOnClickListener(new View.OnClickListener() {
+        Button fridge_btn = (Button) findViewById(R.id.fridge_btn);
+        fridge_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToFridge();
             }
         });
 
-        Button myrecipesButton = (Button) findViewById(R.id.myrecipesButton);
-        myrecipesButton.setOnClickListener(new View.OnClickListener() {
+        Button recipe_btn = (Button) findViewById(R.id.recipe_btn);
+        recipe_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToMyRecipes();
@@ -49,8 +49,8 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        Button receiptButton = (Button) findViewById(R.id.receiptButton);
-        receiptButton.setOnClickListener(new View.OnClickListener() {
+        Button receipt_btn = (Button) findViewById(R.id.receipt_btn);
+        receipt_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToReceipt(v);

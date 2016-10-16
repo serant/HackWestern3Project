@@ -1,0 +1,29 @@
+<!-- Your package folder -->
+<com.example.patrick.hackwestern3project.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+    <!--  Fridge Button -->
+    <Button
+        android:id="@+id/fridge_btn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/fridge_btn"
+        android:text="Fridge" />
+
+    <!--  Receipt Button -->
+    <Button
+        android:id="@+id/receipt_btn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/receipt_btn"
+        android:text="Receipt" />
+
+    <!--  Recipe Button -->
+    <Button
+        android:id="@+id/recipe_btn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/recipe_btn"
+        android:text="Recipe" />
+
+</com.example.patrick.hackwestern3project.DashboardLayout>
