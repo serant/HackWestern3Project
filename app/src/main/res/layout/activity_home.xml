@@ -45,4 +45,13 @@
         android:id="@+id/receiptButton"
         android:layout_below="@+id/shoppingButton"
         android:layout_alignStart="@+id/shoppingButton" />
+
+    <Button
+        android:text="Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/resultButton"
+        android:layout_below="@+id/receiptButton"
+        android:layout_alignStart="@+id/receiptButton" />
 </RelativeLayout>
