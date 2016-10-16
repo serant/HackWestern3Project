@@ -1,13 +1,10 @@
 package com.example.patrick.hackwestern3project;
 
-import android.app.DownloadManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -30,14 +27,17 @@ public class Shopping extends YouTubeBaseActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping);
+
+        Bundle extras = getIntent().getExtras();
+        final String videoId = extras.getString("ID");
+
         youTubePlayerView = (YouTubePlayerView) findViewById(R.id.view);
         onInitializedListener = new YouTubePlayer.OnInitializedListener(){
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("4TIdmcQHNRQ");
+                youTubePlayer.loadVideo(videoId);
             }
 
             @Override
@@ -60,7 +60,7 @@ public class Shopping extends YouTubeBaseActivity
      final   TextView mView=(TextView) findViewById(R.id.description);
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="https://www.googleapis.com/youtube/v3/videos?id=QgmGeDcnzl4&key=AIzaSyDg91ZbSY1cmLNgi0LqZVdrzjBjRUj1Sko%20&part=snippet,contentDetails,statistics,status";
+        String url ="https://www.googleapis.com/youtube/v3/videos?id=" + videoId + "&key=AIzaSyDg91ZbSY1cmLNgi0LqZVdrzjBjRUj1Sko%20&part=snippet,contentDetails,statistics,status";
 
 // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -87,6 +87,6 @@ public class Shopping extends YouTubeBaseActivity
         });
 // Add the request to the RequestQueue.
         queue.add(stringRequest);
-        }
     }
+}
 
