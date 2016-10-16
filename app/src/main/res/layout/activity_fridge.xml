@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView android:layout_height="wrap_content"
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:background="@color/colorPrimaryDark"
-    android:layout_alignParentLeft="true">
-
-<HorizontalScrollView android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent">
-<RelativeLayout android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_gravity="center"
-    android:orientation="vertical">
-<TableLayout android:layout_height="wrap_content"
-    android:layout_width="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/colorPrimaryDark"
-   android:id="@+id/table_main"
-    android:layout_centerHorizontal="true">
-</TableLayout>
-
-</RelativeLayout>
-
-</HorizontalScrollView>
-
-</ScrollView>
+    android:layout_height="fill_parent" >
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="false"
+        />
+</LinearLayout>
