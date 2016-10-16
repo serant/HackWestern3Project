@@ -56,6 +56,14 @@ public class Home extends AppCompatActivity {
                 goToReceipt(v);
             }
         });
+
+        Button resultButton = (Button) findViewById(R.id.resultButton);
+        resultButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+                    public void onClick(View v) {
+                goToResult(v);
+            }
+        });
     }
 
     private void goToFridge() {
@@ -81,6 +89,11 @@ public class Home extends AppCompatActivity {
         integrator.setOrientationLocked(false);
         integrator.setBeepEnabled(false);
         integrator.initiateScan();
+    }
+
+    private void goToResult(View view) {
+        Intent intent = new Intent(this, Result.class);
+        startActivity(intent);
     }
 
     @Override
